@@ -3,12 +3,6 @@
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
-interface GeneratedDocument {
-  message: string;
-  filename: string;
-  file_url: string;
-}
-
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState('');
@@ -98,7 +92,7 @@ export default function Home() {
             <p className="mb-2 text-gray-400">Drop the files here ...</p>
           ) : (
             <p className="mb-2 text-gray-400">
-              Drag 'n' drop some files here, or click to select files
+              Drag and drop some files here, or click to select files
             </p>
           )}
           {file && <p className="mb-2 text-gray-800 font-semibold">{file.name}</p>}

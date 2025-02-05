@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CVGen",
+  title: "CV Crafter",
   description: "App that auto generates CV and cover letter for a given position description using AI.",
 };
 
